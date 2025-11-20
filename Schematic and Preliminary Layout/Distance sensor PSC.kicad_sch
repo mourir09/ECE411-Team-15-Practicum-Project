@@ -620,32 +620,32 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "HC-SR04:HC-SR04"
+		(symbol "Distance sensor:HC-SR04"
 			(pin_names
 				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.0813 0)
+			(property "Reference" "U1"
+				(at 11.43 0.0001 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Value" "HC-SR04"
-				(at 0 -10.163 0)
+				(at 11.43 -2.5399 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "HC-SR04:XCVR_HC-SR04"
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1440,7 +1440,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Oled_SSD1306_6pin:SSD1306_6-pin"
+		(symbol "OLED Display:SSD1306_6-pin"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2154,6 +2154,12 @@
 		(uuid "ed2a9d89-3c78-46e6-976b-58b6dfa9d99f")
 	)
 	(junction
+		(at 115.57 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21b00201-92c6-488a-88fe-b3a9cbcdc318")
+	)
+	(junction
 		(at 151.13 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2166,10 +2172,22 @@
 		(uuid "815d613a-b5c4-4675-b7e7-7ad0cd414b91")
 	)
 	(junction
+		(at 118.11 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93138b20-ce81-4913-b4c7-a0fb42db0f2d")
+	)
+	(junction
 		(at 171.45 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "963fc2d0-80cc-451d-8bf9-a21479547691")
+	)
+	(junction
+		(at 120.65 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d028f67f-fd66-4887-98ba-ce7841809efc")
 	)
 	(junction
 		(at 86.36 35.56)
@@ -2275,6 +2293,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 48.26) (xy 118.11 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03bfd108-265d-48cc-a386-fed990bc34f1")
+	)
+	(wire
+		(pts
+			(xy 121.92 43.18) (xy 121.92 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "098a4946-c28d-404b-819a-ea433a528593")
+	)
+	(wire
+		(pts
 			(xy 171.45 113.03) (xy 171.45 115.57)
 		)
 		(stroke
@@ -2292,6 +2330,16 @@
 			(type default)
 		)
 		(uuid "139af7b5-6e8c-4486-ac86-0e82fda42b03")
+	)
+	(wire
+		(pts
+			(xy 110.49 49.53) (xy 115.57 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "139bd969-3b32-4efa-8cfd-3e28526a5296")
 	)
 	(wire
 		(pts
@@ -2352,6 +2400,16 @@
 			(type default)
 		)
 		(uuid "37ad5be9-b2f6-4dc2-bae1-0e72c369bf71")
+	)
+	(wire
+		(pts
+			(xy 128.27 119.38) (xy 128.27 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af8b2f3-0d18-4915-b4a5-2cd90164315d")
 	)
 	(wire
 		(pts
@@ -2422,6 +2480,16 @@
 			(type default)
 		)
 		(uuid "64586805-7298-47ce-8516-ded5313b789f")
+	)
+	(wire
+		(pts
+			(xy 120.65 113.03) (xy 128.27 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dfdf4d-85f5-423b-86e3-09fddf4edba3")
 	)
 	(wire
 		(pts
@@ -2512,6 +2580,16 @@
 			(type default)
 		)
 		(uuid "9b517561-de30-429a-82c5-ed902a8b4aaa")
+	)
+	(wire
+		(pts
+			(xy 110.49 43.18) (xy 110.49 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c37f545-dc00-426a-9310-a95262bec832")
 	)
 	(wire
 		(pts
@@ -2641,7 +2719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "5V_USB"
 			(at 113.03 45.466 0)
 			(effects
 				(font
@@ -2969,6 +3047,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 110.49 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69a98a70-2774-4f18-836e-8a1500f7d2d6")
+		(property "Reference" "#FLG03"
+			(at 110.49 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 110.49 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 110.49 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fee72da-d68b-425d-925e-5d11196d55f5")
+		)
+		(instances
+			(project "Distance sensor PSC"
+				(path "/54dde89f-c22d-4592-bcdd-d34b1d194bcc"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 152.4 123.19 0)
 		(unit 1)
@@ -3182,7 +3326,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Oled_SSD1306_6pin:SSD1306_6-pin")
+		(lib_id "OLED Display:SSD1306_6-pin")
 		(at 152.4 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3406,6 +3550,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 128.27 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9d88fd5-09f7-4dcf-9d85-6a992e26e439")
+		(property "Reference" "#FLG04"
+			(at 128.27 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 128.27 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 128.27 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "598c0e93-8695-42a6-bdec-e6730a6b96d1")
+		)
+		(instances
+			(project "Distance sensor PSC"
+				(path "/54dde89f-c22d-4592-bcdd-d34b1d194bcc"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 43.18 0)
 		(unit 1)
@@ -3472,7 +3682,7 @@
 		)
 	)
 	(symbol
-		(lib_id "HC-SR04:HC-SR04")
+		(lib_id "Distance sensor:HC-SR04")
 		(at 170.18 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3855,6 +4065,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 121.92 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6f2c561-6723-475a-8457-ca8e4099740e")
+		(property "Reference" "#FLG02"
+			(at 121.92 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23d0df38-53ce-4d70-830d-491288e978b9")
+		)
+		(instances
+			(project "Distance sensor PSC"
+				(path "/54dde89f-c22d-4592-bcdd-d34b1d194bcc"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 76.2 35.56 0)
 		(unit 1)
@@ -3872,8 +4148,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 78.486 33.274 0)
+		(property "Value" "5V_BAT"
+			(at 80.518 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4004,7 +4280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "5V_USB"
 			(at 165.1 41.91 0)
 			(effects
 				(font
