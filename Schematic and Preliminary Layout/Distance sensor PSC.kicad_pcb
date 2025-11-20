@@ -4565,6 +4565,19 @@
 		(layer "Edge.Cuts")
 		(uuid "521c1c36-8bda-498a-a048-16272220fd67")
 	)
+	(gr_text "Team 15\nRev: 3.0\n11-20-2025\n"
+		(at 154.5 57.5 0)
+		(layer "F.Cu")
+		(uuid "702a6f72-fee4-4058-99b6-cc2801ac32cd")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Yellow"
 		(at 145.405052 114.094947 0)
 		(layer "B.SilkS")
