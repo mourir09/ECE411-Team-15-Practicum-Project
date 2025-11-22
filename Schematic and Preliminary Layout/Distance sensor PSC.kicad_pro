@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Distance sensor.kicad_pro",
+    "filename": "Distance sensor PSC.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -487,7 +487,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./",
+      "plot": "build",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
